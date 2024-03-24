@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resumo das aulas</title>
+        <link rel="stylesheet" href="../static/css/styles.css" type="text/css">
+
+    </head>
+
+<body>
+    
+    <div class="flex-type-column gap page-center">
+
+        <h2>Setup dos botões:</h2>
+        <hr>
+        
+        <section id="content-controller-section">
+
+            <!-- content-controller -->
+            <div class="gap flex-type-row" id="content-controller">
+
+                <div class="flex-type-row">
+                    <span id="slide-value"></span>
+                </div>
+                
+                <div class="gap flex-type-column">
+                    <div id="key-bindings" class="std-p">
+                        <span>A: voltar</span> * <span>D: avançar</span> * <span>outro: resetar</span>
+                    </div>
+                    <div id="other-navegating-ways">
+                        <span>clique no botão: exibe/esconde conteúdo</span>
+                    </div>
+                    
+                </div>
+
+            </div>
+        
+        </section>
+        
+        <!-- each section has 2 groups of div, the first one has 5 concepts and the second show their content -->
+        <section id="group-content-one">
+            <div class="flex-type-row terms">
+                <!-- Conceito 1 -->
+                <button>Redes de dispositivos</button> 
+    
+                <!-- Conceito 2 -->
+                <button>Meios de transmissão</button>
+    
+                <!-- Conceito 3 -->
+                <button>Protocolos</button>
+    
+                <!-- Conceito 4 -->
+                <button>Classificação das redes</button>
+    
+                <!-- Conceito 5 -->
+                <button>Critério 1: Meio de transmissão</button>     
+            </div>
+    
+            <div class="flex-type-row">
+                <!-- Conceito 1 -->
+                <ol>
+                    <li>Todo e qualquer <span>equipamento endereçável e ativo</span> na rede</li>
+                    <li>Conjunto formado por 2+ dispositivos interligados por um <span>meio de transmissão</span></li>
+                    <li>Utilizam <span>protocolos</span> para oferecer <span>serviços</span> aos usuários</li>
+                </ol>
+    
+                <!-- Conceito 2 -->
+                <ol>
+                    <li>Infraestrutura utilizada para transportar os dados pela rede: <span>com fio, sem fio</span> </li>
+                    <li>com fio: <span>cabo par trançado</span> * <span>cabo coaxial</span> * <span>fibra óptica</span></li>
+                    <li>sem fio: <span>infravermelho</span> * <span>laser</span> * <span>microondas</span> * <span>radiofrequência</span> * <span>satélite</span></li>
+                    <li><span># cabo par trançado</span></li>
+                    <li>pelo menos 1 par de fios de cobra trançados</li>
+                    <li>a quantidade de tranças entre cada par de fios varia bastante, de unidades até centenas de tranças</li>
+                    <li>sua classificação: <span>unshielded twisted pair</span> e <span>shielded twisted pair</span></li>
+                    <li>sua classificação: em categorias numéricas <span>3, 4, 5, 6</span></li>
+                    <li>a diferença entre elas <span>não têm a ver com performance</span>, mas com contexto de necessidade</li>
+                    <li><span>shielded twisted pair</span> possui uma proteção de alumínio, além da proteção plástica comum</li>
+                    <li><span>nas categorias numéricas</span> ,os equipamentos devem ser de = categoria (compatibilidade)</li>
+                </ol>
+    
+                <!-- Conceito 3 -->    
+                <ol>
+                    <li> Conjunto de <span>regras</span> que definem como os dados são transmitidos e recebidos</li>
+                    <li> Define os <span>requisitos</span> para a comunicação entre todos os dispositivos</li>
+                </ol>
+    
+                <!-- Conceito 4 --> 
+                <ol>
+                    <li>São muito <span>variadas</span>, por isso são divididas em <span>critérios</span></li>
+                </ol>
+    
+                <!-- Conceito 5 -->    
+                <ol>
+                    <li><span>com fio</span> e <span>sem fio</span></li>
+                    <li>ambas são de <span>curto alcançe</span></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="group-content-two">
+            <div class="flex-type-row terms">
+
+                <!-- Conceito 6 -->
+                <button>Critério 2: Alcance</button>
+    
+                <!-- Conceito 7 -->
+                <button>Critério 3: Modo de transmissão</button>
+    
+                <!-- Conceito 8 -->
+                <button>Modelos de arquitetura de redes</button>
+    
+                <!-- Conceito 9 -->
+                <button>Tipos de serviços</button>
+    
+                <!-- Conceito 10 -->
+                <button>Serviço orientado à conexão</button>
+    
+            </div>
+    
+            <div class="flex-type-row">
+                
+                <!-- Conceito 6 -->
+                <ol>
+                    <li><span># lan:</span> local area network</li>
+                    <li> redes locais de <span>curto alcance</span>, usadas em empresas, residências, campus, etc.</li>
+                    <li><span># man:</span> metropolitan area network</li>
+                    <li>redes locais de <span>médio alcance</span>, cobrindo bairros, até cidades</li>
+                    <li>usadas em: <span>tv a cabo, telefonia, celular</span></li>
+                    <li><span># wan:</span> wide area network</li>
+                    <li>redes de <span>longo alcance</span>, geograficamente distribuídas, cobrindo o globo terrestre e além</li>
+                    <li>usadas em: <span>internet, transmissão via satélite</span></li>
+                </ol>
+    
+                <!-- Conceito 7 -->
+                <ol>
+                    <li><span># Redes por difusão</span></li>
+                    <li>canal de transmissão <span >único e compartilhado</span> com todas as <span>estações</span></li>
+                    <li>um <span>pacote</span> é enviado para uma <span>estação</span> e é recebido por todas</li>
+                    <li>usadas em: <span >celular, rádio, telefonia, tv</span></li> 
+                    <li><span># Redes ponto a ponto</span></li>
+                    <li>comunicação direta entre as <span>estações</span></li>
+                    <li>não necessariamente identifica conexão entre as estações</li>
+                    <li>os dados trafegam pela rede ocupando as <span>estações intermediárias</span></li>
+                    <li>uma transmissão nem sempre fornece dados para <span>todas as estações</span></li>
+                </ol>
+    
+                <!-- Conceito 8 -->
+                <ol>
+                    <li>toda <span>tecnologia de redes</span> é dependente de um <span>modelo</span></li>
+                    <li>especifica todo o funcionamento <span>físico e lógico</span>, incluindo <span>serviços e protocolos</span></li>
+                    <li>a construção dos modelos é feito com base em <span># camadas</span></li>
+                    <li><span># camadas:</span> forma de divisão das funcionalidades</li>
+                    <li><span># serviços:</span> forma como a camada trabalha (o que ela faz)</li>
+                    <li><span># protocolos:</span> implementação dos serviços</li>
+                    <li><span># osi:</span> principal modelo de arquitetura</li>
+                </ol>
+    
+                <!-- Conceito 9 -->
+                <ol>
+                    <li>Orientados à conexão</li>
+                    <li>Não Orientados à conexão</li>
+                </ol>
+    
+                <!-- Conceito 10 -->
+                <ol>
+                    <li><span># Parâmetros</span></li>
+                    <li><span>rota:</span> caminho percorrido pelos pacotes na rede</li>
+                    <li>tamanho máximo do <span>pacote</span></li>
+                    <li>tipo de confirmação de entrega <span>(protocolado & lento)</span></li>
+                    <li><span># Etapas</span></li>
+                    <li>solicitação de conexão</li>
+                    <li>estabelecimento da conexão</li>
+                    <li>transmissão de dados</li>
+                    <li>solicitação de encerramento da conexão</li>
+                    <li>encerramento da conexão</li>
+                </ol>
+    
+            </div>
+        </section>
+        
+        <section id="group-content-three">
+            <div class="flex-type-row terms">
+
+                <!-- Conceito 11 -->
+                <button>Serviço Não Orientado à conexão</button>
+    
+                <!-- Conceito 12 -->
+                <button>Modelo OSI</button>
+    
+                <!-- Conceito 13 -->
+                <button>Camadas OSI</button>
+    
+                <!-- Conceito 14 -->
+                <button>Camada Física</button>
+    
+                <!-- Conceito 15 -->
+                <button>Camada de Enlace</button>
+    
+            </div>    
+            
+            <div class="flex-type-row">
+    
+                <!-- Conceito 11 -->
+                <ol>
+                    <li>não é exigido uma conexão</li>
+                    <li>a <span>rota do pacote</span> é enviada na rede <span>não estando previamente definida</span></li>
+                    <li>cada pacote é roteado independente do outro, só que alguns pacotes possuem mais prioridade do que outros</li>
+                    <li>a ordem de chegada <span>não é garantida</span></li>
+                    <li>a confirmação de entrega <span>pode ou não ser confirmada</span></li>
+                    <li>basicamente, é como se fosse pedir informação sequencialmente, até conseguir chegar no seu destino</li>
+                    <li>contra: <span># -confiável</span> pró: <span># +rápido</span></li>
+                    <li>O protocolo <span># udp</span> é gerenciado por esse serviço</li>
+                    <li><span>Sobre os pacotes:</span> não precisam ser todos enviados, ordem não garantida</li>
+                </ol>
+    
+                <!-- Conceito 12 -->
+                <ol>
+                    <li>open system interconnection</li>
+                    <li>modelo proposto pela ISO (international standard organization)</li>
+                    <li>características: <span>não prático, aberto, robusto, completo</span></li>
+                    <li><span># não prático:</span> não é aplicável, é apenas uma teoria que funciona bem para explicar redes</li>
+                    <li>composto por: <span>7 camadas</span></li>
+                </ol>
+                
+                <!-- Conceito 13 -->
+                <ol>
+                    <li><span>física</span> * <span>enlace</span> * <span>rede</span> * <span>transporte</span> * <span>sessão</span> * <span>apresentação</span> * <span>aplicação</span></li>
+                </ol>
+    
+                <!-- Conceito 14 -->
+                <ol>
+                    <li>definição e tratamento dos <span>aspectos físicos</span> da comunicação na rede</li>
+                    <li>o bit é a unidade de dados da camada (multiplexação e comutação)</li>
+                    <li><span># atividades</span></li>
+                    <li>representação binária dos sinais elétricos</li>
+                    <li>definição da voltagem usada</li>
+                    <li>tempo de duração no pulso elétrico</li>
+                    <li>conectores e pinagem</li>
+                    <li>meios de transmissão</li>
+                </ol>
+                
+                <!-- Conceito 15 -->
+                <ol>
+                    <li>das camadas mais baixas, esta é a mais estruturada</li>
+                    <li>organiza os <span>bits brutos</span> vindos da <span># camada física</span> em estruturas de dados organizadas: <span># quadros</span></li>
+                    <li><span># quadros:</span> se assemelham a estrutruras como <span>dicionários</span> em Python</li>
+                    <li><span># funções dos quadros</span></li>
+                    <li><span>enquadramento:</span> conversão dos bits em estrutura de quadros</li>
+                    <li><span>controle de erros:</span> precisa entender exatamente o que chegou</li>
+                    <li><span>controle de fluxo:</span> manter a qtd. de quadros sem deixar exceder</li>
+                    <li><span>controle de acesso:</span> autorizar a liberação de um quadro</li>
+                </ol>
+    
+            </div> 
+        </section>
+        
+        <section id="group-content-four">
+            <div class="flex-type-row terms">
+
+                <!-- Conceito 16 -->
+                <button>Camada de Rede</button>
+    
+                <!-- Conceito 17 -->
+                <button>Camada de Transporte</button>
+    
+                <!-- Conceito 18 -->
+                <button>Camada de Sessão</button>
+    
+                <!-- Conceito 19 -->
+                <button>Camada de Apresentação</button>
+    
+                <!-- Conceito 20 -->
+                <button>Camada de Aplicação</button>
+    
+            </div>
+    
+            <div class="flex-type-row">
+                
+                <!-- Conceito 16 -->
+                <ol>
+                    <li><span>miolo</span> do modelo OSI</li>
+                    <li>controla a operação da subrede, entregando pacotes à próxima camada</li>
+                    <li>a unidade padrão é o <span># pacote</span></li>
+                    <li>seu núcleo é muito organizado</li>
+                    <li>serviços: <span>orientados à conexão</span> e <span>não orientados à conexão</span></li>
+                    <li><span># funções dos pacotes</span></li>
+                    <li><span>controle de roteamento:</span> encontrar um caminho da origem ao destino</li>
+                    <li><span>controle de roteamento:</span> pode ser <span>dinâmico</span> ou <span>estático</span></li>
+                    <li><span>dinâmico:</span> quando há uma multiplicidade de saídas</li>
+                    <li><span>estático:</span> quando já foi definido previamente</li>
+                    <li><span>controle de congestionamento:</span> impedir ou aliviar</li>
+                    <li><span>endereçamento de hosts:</span> tornar equipamentos endereçáveis na rede</li>
+                    <li><span>interconexão de redes heterogêneas</span> </li>
+                    <li><span>contabilização de pacotes</span> </li>
+                    <li>termos relacionados: payload e overheads</li>
+                </ol>
+    
+                <!-- Conceito 17 -->
+                <ol>
+                    <li>recebe dados da <span># camada de sessão</span> (posterior), dividindo-os em unidades menores</li>
+                    <li>esses dados são repassados à <span># camada de rede</span></li>
+                    <li>trabalha diretamente com <span>servições orientados à conexão</span></li>
+                    <li>servindo de controller da tranmissão para <span>garantir a entrega dos dados</span></li>
+                </ol>
+    
+                <!-- Conceito 18 -->
+                <ol>
+                    <li>possibilita a comunicação entre computadores com arquiteturas != se comunicarem</li>
+                </ol>
+    
+                <!-- Conceito 19 -->
+                <ol>
+                    <li>tratamento da segurança (criptografia)</li>
+                </ol>
+    
+                <!-- Conceito 20 -->
+                <ol>
+                    <li>camada de <span>mais alto nível</span></li>
+                    <li>definição e implementação de <span>serviços e protocolos</span> de alto nível</li>
+                    <li>onde a maioria dos usuários trabalha/opera</li>
+                </ol>
+    
+            </div>
+        </section>
+        
+        <section id="group-content-five">
+            <div class="flex-type-row terms">
+
+                <!-- Conceito 21 -->
+                <button>Modelo TCP/IP</button>
+    
+                <!-- Conceito 22 -->
+                <button>Camada 4: Host-rede</button>
+    
+                <!-- Conceito 23 -->
+                <button>Camada 3: Inter-redes</button>
+    
+                <!-- Conceito 24 -->
+                <button>Camada 2: Transporte</button>
+    
+                <!-- Conceito 25 -->
+                <button>Camada 1: Aplicação</button>
+    
+            </div>
+    
+            <div class="flex-type-row">
+     
+                <!-- Conceito 21 -->
+                <ol>
+                    <li>conhecido como <span># modelo internet</span></li>
+                    <li>criado para servir a <span># arpanet</span> , que se tornou <span># internet</span></li>
+                    <li><span>protocolos</span> amplamente utilizados</li>
+                    <li>os seus <span>protocolos</span> são <span>anteriores</span> a criação deste modelo</li>
+                    <li><span># filosofia</span></li>
+                    <li>a comunicação entre origem e destino deve ser <span># continuada</span></li>
+                    <li>mesmo que haja erros repentinos nas camadas de infraestrutura <span># host-rede</span></li>
+                    <li>possui <span>4 camadas</span></li>
+                </ol>
+    
+                <!-- Conceito 22 -->
+                <ol>
+                    <li>nível não implementado ao modelo (conceitual)</li>
+                    <li>os protocolos devem se comunicar e oferecer interface de comunicação com o protocolo IP</li>
+                    <li>seus protocolos <span>não são explicitados</span></li>
+                </ol>
+    
+                <!-- Conceito 23 -->
+                <ol>
+                    <li>é auxiliada pelo <span># protocolo IP</span>, um <span>serviço não orientado à conexão</span></li>
+                    <li>não há um estabelecimento de uma conexão explícita antes do envio de dados</li>
+                    <li>o roteamento dos pacotes acontece de forma independente</li>
+                </ol>
+    
+                <!-- Conceito 24 -->
+                <ol>
+                    <li>é auxiliada pelos protocolos <span># tcp</span> e <span># udp</span></li>
+                    <li><span># tcp</span> é um <span>serviços orientado à conexão</span></li>
+                    <li><span># udp</span> é um <span>serviços não orientado à conexão</span></li>
+                </ol>
+    
+                <!-- Conceito 25 -->
+                <ol>
+                    <li>Nível mais alto, com protocolos e serviços de mais alto nível</li>
+                    <li><span># procolos e serviços</span></li>
+                    <li><span>DNS</span> * <span>FTP</span> * <span>HTTP</span> * <span>POP/IMAP</span> * <span>SMTP</span>(email) * <span>SNMP</span>(network management) * <span>SSH</span> * <span>TELNET</span></li>
+                </ol>
+    
+            </div>
+        </section>
+
+        <section id="group-content-six">
+            <div class="flex-type-row terms">
+
+                <!-- Conceito 26 -->
+                <button>Modelo OSI vs Modelo TCP/IP (semelhanças)</button>
+    
+                <!-- Conceito 27 -->
+                <button>Modelo OSI vs Modelo TCP/IP (diferenças)</button>
+    
+            </div>
+    
+            <div class="flex-type-row">
+    
+                <!-- Conceito 26 -->
+                <ol>
+                    <li>baseados em modelos de <span># camadas</span></li>
+                    <li>as funções de suas camadas se assemelham em funções/funcionalidades, com algumas excessões</li>
+                </ol>
+    
+                <!-- Conceito 27 -->
+                <ol>
+                    <li>No <span>modelo OSI</span>, o modelo em si, existia antes dos protocolos</li>
+                    <li>No <span>modelo OSI</span>, sabe reconhecer a != entre: <span># serviço</span>, <span># interface</span>, <span># protocolo</span></li>
+                    <li>No <span>modelo OSI</span>, na camada de <span># rede</span>, existem os <span># snoc, soc</span></li>
+                    <li>No <span>modelo TCP/IP</span>, na camada de <span># inter-redes</span> existe apenas <span># snoc</span></li>
+                    <li>No <span>modelo OSI</span>, na camada de <span># transporte</span>, existe apenas <span># soc</span></li>
+                    <li>No <span>modelo TCP/IP</span>, na camada de <span># transporte</span>, existem os: <span># snoc e soc</span></li>
+                </ol>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="../static/js/scripts.js" type="text/javascript"></script>
+
+</body>
+
+</html>
